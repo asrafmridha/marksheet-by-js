@@ -40,6 +40,46 @@
 
             document.getElementById("grade").value= "F";
         }
+
+        else {
+
+             alert("It's Not Possible");
+             document.getElementById("tm").value= "";
+             document.getElementById("pm").value= "";
+             document.getElementById("ttm").value= "";
+             document.getElementById("grade").value= "";
+        }
+
+        if(document.getElementById("grade").value == "A+" ){
+
+            document.getElementById("point").value=5.00;
+        }
+       else if(document.getElementById("grade").value == "A" ){
+
+            document.getElementById("point").value=4.00;
+        }
+        else if(document.getElementById("grade").value == "A-" ){
+
+            document.getElementById("point").value=3.50;
+        }
+        else if(document.getElementById("grade").value == "B" ){
+
+            document.getElementById("point").value=3.00;
+        }
+        else if(document.getElementById("grade").value == "C" ){
+
+            document.getElementById("point").value=2.00;
+        }
+        else if(document.getElementById("grade").value == "D" ){
+
+            document.getElementById("point").value=1.00;
+        }
+
+        else{
+
+            document.getElementById("grade").value= "F";
+        }
+    
     
     
 
