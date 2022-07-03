@@ -78,6 +78,8 @@
         else{
 
             document.getElementById("grade").value= "F";
+            document.getElementById("point").value= "0";
+          
         }
     
     
