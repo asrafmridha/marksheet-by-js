@@ -264,11 +264,17 @@ function total3(){
    var _bn2nd=document.getElementById("ttm1").value;
    var _eng1st=document.getElementById("ttm3").value;
 
-   var _totalresult=parseInt(_bn1st)+parseInt(_bn2nd)+parseInt(_eng1st);
+   var _totalmark=parseInt(_bn1st)+parseInt(_bn2nd)+parseInt(_eng1st);
+   document.getElementById("totalMark").value=_totalmark;
 
+   var _bn1st=document.getElementById("point").value;
+   var _bn2nd=document.getElementById("point1").value;
+   var _eng1st=document.getElementById("point3").value;
+
+   var _totalpoint =parseInt(_bn1st)+parseInt(_bn2nd)+parseInt(_eng1st);
+
+    document.getElementById("totalpoint").value=_totalpoint;
    
-
-   document.getElementById("totalMark").value=_totalresult;
 
  }
  
