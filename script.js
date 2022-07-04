@@ -81,9 +81,96 @@
             document.getElementById("point").value= "0";
           
         }
-    
-    
-    
-
-
  }
+
+//    New function for bangla 2nd paper 
+
+ 
+function total1(){
+
+    var _theorymarks= document.getElementById("tm1").value;
+    var _practicalmarks= document.getElementById("pm1").value;
+
+     if( _theorymarks=="" || _practicalmarks=="" ){
+
+   alert("Please Push a number");
+     }
+        var total= parseInt(_practicalmarks)+parseInt(_theorymarks);
+      
+        document.getElementById("ttm1").value=total;
+
+        if(total>=80 && total<=100){
+
+            document.getElementById("grade1").value= "A+";
+        }
+        else if(total>=70 && total<=79){
+
+            document.getElementById("grade1").value= "A";
+        }
+        else if(total>=60 && total<=69){
+
+            document.getElementById("grade").value= "A-";
+        }
+        else if(total>=50 && total<=59){
+
+            document.getElementById("grade1").value= "B";
+        }
+        else if(total>=40 && total<=49){
+
+            document.getElementById("grade1").value= "C";
+        }
+        else if(total>=33 && total<=39){
+
+            document.getElementById("grade1").value= "D";
+        }
+        else if(total>=0 && total<=32){
+
+            document.getElementById("grade1").value= "F";
+        }
+
+        else {
+
+             alert("It's Not Possible");
+             document.getElementById("tm1").value= "";
+             document.getElementById("pm1").value= "";
+             document.getElementById("ttm1").value= "";
+             document.getElementById("grade1").value= "";
+        }
+
+        if(document.getElementById("grade1").value == "A+" ){
+
+            document.getElementById("point1").value=5.00;
+        }
+       else if(document.getElementById("grade1").value == "A" ){
+
+            document.getElementById("point1").value=4.00;
+        }
+        else if(document.getElementById("grade1").value == "A-" ){
+
+            document.getElementById("point1").value=3.50;
+        }
+        else if(document.getElementById("grade1").value == "B" ){
+
+            document.getElementById("point1").value=3.00;
+        }
+        else if(document.getElementById("grade1").value == "C" ){
+
+            document.getElementById("point1").value=2.00;
+        }
+        else if(document.getElementById("grade1").value == "D" ){
+
+            document.getElementById("point1").value=1.00;
+        }
+
+        else{
+
+            document.getElementById("grade1").value= "F";
+            document.getElementById("point1").value= "0";
+          
+        }
+    
+    
+    
+
+
+ }1
