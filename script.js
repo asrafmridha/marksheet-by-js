@@ -249,11 +249,26 @@ function total3(){
             document.getElementById("point3").value=1.00;
         }
 
-        else{
+         else{
 
-            document.getElementById("grade3").value= "F";
-            document.getElementById("point3").value= "0";
+             document.getElementById("grade3").value= "F";
+             document.getElementById("point3").value= "0";
           
-        }
+         }
 
  }
+
+ function totalresult(){
+
+   var _bn1st=document.getElementById("ttm").value;
+   var _bn2nd=document.getElementById("ttm1").value;
+   var _eng1st=document.getElementById("ttm3").value;
+
+   var _totalresult=parseInt(_bn1st)+parseInt(_bn2nd)+parseInt(_eng1st);
+
+   
+
+   document.getElementById("totalMark").value=_totalresult;
+
+ }
+ 
