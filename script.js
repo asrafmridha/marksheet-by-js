@@ -572,14 +572,30 @@ function total3(){
         var _totalpoint= parseInt(_bnpoint)+parseInt(_enpoint)+parseInt(_mathpoint)+parseInt(_soclscience)+parseInt(_gsciencepoint)+parseInt(_islamicstdpoint);
      
          document.getElementById("totalpoint").value=_totalpoint/6;
+ 
+          
+         //get totalpoint from html
 
-        // if(b=5.00){
-        //    document.getElementById("totalgrade").value="A+";
-        // }
-        // else if(b >=4 ){
+        b= document.getElementById("totalpoint").value;
 
-        //     document.getElementById("totalgrade").value="A";
-        // }
+         if (b==5.00) {
+			document.getElementById("totalgrade").value="A+";
+		}
+		else if (b >=4.00 && b <=4.99) {
+			document.getElementById("totalgrade").value="A";
+		}
+		else if (b >=3.50 && b <=3.99) {
+			document.getElementById("totalgrade").value="A-";
+		}
+		else if (b >=3.00 && b <=3.49) {
+			document.getElementById("totalgrade").value="B";
+		}
+		else if (b >=2.00 && totalPoint <=2.99) {
+			document.getElementById("totalgrade").value="C";
+		}
+		else if (b >=1.00 && b <=1.99) {
+			document.getElementById("totalgrade").value="D";
+		}
      
          
      
